@@ -1,4 +1,4 @@
-# MacacaElementUI元素查找器
+# MacacaUIFinder元素查找器
 
 ### 1. 这是什么?
 1. 这是一个用JavaSwing写的Macaca元素查找器,方便测试的小伙伴们定位元素.
