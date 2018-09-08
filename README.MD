@@ -1,7 +1,7 @@
 # MacacaUIFinder元素查找器
 
 ### 1. 这是什么?
-1. 这是一个用JavaSwing写的Macaca元素查找器,方便测试的小伙伴们定位元素.
+1. 这是一个用JavaSwing写的Macaca元素查找器,方便测试的小伙伴们定位元素,如果觉得不错,还请点个<font size=7 color="red">Star</font>鼓励下,嘿嘿.
 
 ### 2. 为了什么?
 1. 为了解决在`app-inspector`上找到元素后,没一次在Java中启动Macaca(启动链接MacacaServer的过程)定位元素巨慢,有时候一个元素定位失败了,
