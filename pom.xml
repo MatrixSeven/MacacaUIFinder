@@ -24,7 +24,7 @@
                     <!-- 这个archive以及archive里面的设置很重要，没有这个配置，就无法生成可执行jar文件 -->
                     <archive>
                         <manifest>
-                            <mainClass>ui.MainUI</mainClass>
+                            <mainClass>Core</mainClass>
                         </manifest>
                     </archive>
                     <!-- 这个jar-with-dependencies是这个插件中预置的，不用管它，尽管用就好了 -->
