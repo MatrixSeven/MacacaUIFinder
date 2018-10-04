@@ -131,6 +131,7 @@ public class DoItEvent extends UIEventInterface<DoItPanel> implements ActionList
     }
 
 
+    @SuppressWarnings("unchecked")
     private void load_config_event_done(Message message) {
         Params params = message.getMessage();
         this.comp.switchConfigRunner.setText(DoItName.SWITCH_BUTTON);
@@ -138,7 +139,7 @@ public class DoItEvent extends UIEventInterface<DoItPanel> implements ActionList
         this.comp.currentConfig.removeAllItems();
         if (res) {
             this.config = JSONArray.parseArray(params.get("config").toString());
-            config.stream().forEach(it ->
+            config.forEach(it ->
                     comp.currentConfig.addItem(((JSONObject) it).get("name")));
         } else {
             comp.currentConfig.addItem("没有数据");
@@ -195,6 +196,7 @@ public class DoItEvent extends UIEventInterface<DoItPanel> implements ActionList
 
     }
 
+    @SuppressWarnings("unchecked")
     private void run_command_button() {
         this.comp.runCommand.setEnabled(false);
         this.comp.switchConfigRunner.setEnabled(false);

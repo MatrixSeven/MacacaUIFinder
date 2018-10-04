@@ -24,14 +24,18 @@ import java.util.HashMap;
  * Created by seven on 2018/9/4.
  */
 
+
 public class Params extends HashMap<String,Object> {
 
     public Params put(String key,Object v) {
         super.put(key, v);
         return this;
     }
+
+    @SuppressWarnings("unchecked")
     public <T> T getParams(Object key) {
         return (T)super.get(key);
+
     }
 
     public static Params create(){

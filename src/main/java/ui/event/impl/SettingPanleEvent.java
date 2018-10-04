@@ -124,7 +124,7 @@ public class SettingPanleEvent extends UIEventInterface<SettingPanel> implements
                     JOptionPane.INFORMATION_MESSAGE);
             return;
         }
-        Utils.laodConifg();
+        Utils.loadConfig();
     }
 
     private void load_config_event_done(Message message) {

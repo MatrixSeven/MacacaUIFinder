@@ -47,7 +47,7 @@ public class Utils {
         }
     }
 
-    public static void laodConifg() {
+    public static void loadConfig() {
         try {
             BufferedReader bufferedReader = new BufferedReader(new FileReader(CONFIG));
             String tempString;
@@ -87,7 +87,7 @@ public class Utils {
             }
             MessageManger.PublishEvent(Message.Create(EventType.SAVE_CONFIG_EVENT_DONE,
                     Params.create().put("save_res", true)));
-            laodConifg();
+            loadConfig();
         } catch (IOException e) {
             MessageManger.PublishEvent(Message.Create(EventType.SAVE_CONFIG_EVENT_DONE,
                     Params.create()
